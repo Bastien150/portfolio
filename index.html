@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Forest Bastien</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <div class="loader"></div>
+
+    <nav class="navbar">
+        <div class="logo">Portfolio de Bastien FOREST</div>
+        <ul>
+            <li><a href="">Accueil</a></li>
+            <li><a href="stage.html">Stage</a></li>
+            <li></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <ul class="quadrados">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        <div class="container-hero">
+            <div class="hero-content fade-in-up">
+                <h2>Bastien Forest</h2>
+                <p>Étudiant en BTS SIO spécialité SLAM</p>
+            </div>
+        </div>
+        
+    </header>
+
+    <div class="main-content">
+        <h2>Mon Parcours</h2>
+        <div class="timeline">
+            <div class="container left fade-in-up">
+                <div class="content">
+                    <h2>2023 - 2025</h2>
+                    <p>BTS SIO option SLAM</p>
+                </div>
+            </div>
+            <div class="container right fade-in-up">
+                <div class="content">
+                    <h2>2021 - 2023</h2>
+                    <p>Bac STI2D option SIN</p>
+                </div>
+            </div>
+            <div class="container left fade-in-up">
+                <div class="content">
+                    <h2>2020 - 2021</h2>
+                    <p>Seconde générale</p>
+                </div>
+            </div>
+        </div>
+        <br>
+<br>
+        <div class="widget">
+        <h2>Compétences Acquises</h2>
+
+            <div style="display: flex; justify-content: space-evenly; font-weight: 600;">
+                <span>Conception de bases de données</span>
+                <span>Java FX</span>
+                <span>Android Studio</span>
+                <span>PHP</span>
+                <span>JavaScript</span>
+                <span>SQL</span>
+            </div>
+        </div>
+        <br>
+
+        <h2>Mes Stages</h2>
+        <div class="stage-cards">
+            <div class="card fade-in-up">
+                <img src="./img/logo-Hardis.png" alt="logo-HG">
+                <h3>Stage 1er année</h3>
+                <p>Stage à HardisGroup</p>
+                <a href="stage.html#stage1">Découvrir</a>
+            </div>
+            <div class="card fade-in-up">
+                <img src="./img/logo-G-SCOP.png" alt="logo-HG">
+                <h3>Stage 2eme année</h3>
+                <p>Stage au laboratoire G-SCOP</p>
+                <a href="stage.html#stage2">Découvrir</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 - Tous droits réservés à Forest Bastien.</p>
+    </footer>
+
+    <!-- Chargement -->
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.querySelector('.loader');
+            setTimeout(() => {
+                loader.classList.add('hidden');
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
