@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>CV — Bastien Forest</title>
+  <style>
+    @font-face { font-family: "Space Grotesk"; src: url("assets/fonts/SpaceGrotesk-400-700.woff2") format("woff2"); font-weight: 400 700; }
+    @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400-600.woff2") format("woff2"); font-weight: 400 600; }
+    @font-face { font-family: "IBM Plex Mono"; src: url("assets/fonts/IBMPlexMono-400.woff2") format("woff2"); font-weight: 400; }
+    @page { size: A4; margin: 9mm 13mm 6mm; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 8.6pt/1.35 "Inter", system-ui, sans-serif; color: #101522; background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    h1, h2, h3 { font-family: "Space Grotesk", system-ui, sans-serif; margin: 0; letter-spacing: -0.01em; }
+    .mono { font-family: "IBM Plex Mono", monospace; font-size: 8pt; letter-spacing: 0.03em; }
+    header { display: flex; justify-content: space-between; gap: 10mm; padding-bottom: 3.5mm; border-bottom: 2px solid #101522; }
+    h1 { font-size: 23pt; line-height: 1; }
+    .role { margin: 2mm 0 0; font-size: 11pt; color: #3a5f00; font-weight: 500; }
+    .contact { text-align: right; line-height: 1.6; }
+    .contact a { color: inherit; text-decoration: none; }
+    h2 { margin: 3.2mm 0 1.6mm; padding-bottom: 1mm; border-bottom: 1px solid #c9c9c2; font-size: 8.5pt; letter-spacing: 0.1em; text-transform: uppercase; font-family: "IBM Plex Mono", monospace; font-weight: 400; color: #465064; }
+    h3 { font-size: 10.5pt; }
+    p { margin: 0 0 1.5mm; }
+    .row { display: grid; grid-template-columns: 30mm 1fr; gap: 4mm; margin-bottom: 2mm; break-inside: avoid; }
+    .row .when { color: #465064; padding-top: 0.6mm; }
+    ul { margin: 1mm 0 0; padding-left: 4mm; }
+    li { margin-bottom: 0.6mm; }
+    .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 8mm; }
+    .cols b { font-weight: 600; }
+    .small { color: #465064; }
+    .cols p { margin: 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Bastien Forest</h1>
+      <p class="role">Développeur junior — web, logiciel &amp; systèmes</p>
+    </div>
+    <div class="contact mono">
+      Voiron / Grenoble, France<br>
+      <a href="mailto:bastienforest01@gmail.com">bastienforest01@gmail.com</a><br>
+      <a href="https://github.com/Bastien150">github.com/Bastien150</a><br>
+      <a href="https://www.linkedin.com/in/bastien-forest-294b3a2bb/">linkedin.com/in/bastien-forest-294b3a2bb</a><br>
+      <a href="https://glubul.ovh/portfolio/">glubul.ovh/portfolio</a>
+    </div>
+  </header>
+
+  <h2>Profil</h2>
+  <p>Développeur junior diplômé d’un BTS SIO option SLAM. Je conçois des applications web, je travaille avec des bases de données et j’administre mon propre environnement informatique. Autonome, curieux, à l’aise entre développement et systèmes.</p>
+  <p class="small"><b>Postes recherchés :</b> développeur web junior · développeur Full-Stack junior · développeur logiciel junior · technicien informatique · technicien support · technicien systèmes et réseaux junior.</p>
+
+  <h2>Formation</h2>
+  <div class="row"><div class="when mono">2023 — 2025</div><div><h3>BTS SIO option SLAM</h3><p class="small">Services informatiques aux organisations — solutions logicielles et applications métiers. Diplôme obtenu.</p></div></div>
+  <div class="row"><div class="when mono">2021 — 2023</div><div><h3>Baccalauréat STI2D option SIN</h3><p class="small">Systèmes d’information et numérique.</p></div></div>
+
+  <h2>Expériences en stage</h2>
+  <div class="row"><div class="when mono">Stage 2<sup>e</sup> année</div><div><h3>Laboratoire G-SCOP</h3>
+    <p>Tableau de bord web pour les chefs d’équipe : publications, membres de l’équipe, contrats, graphiques et tableaux.</p>
+    <ul><li>Données récupérées par API (HAL, RH, Contrat) ; base PostgreSQL ; Bootstrap Table et Chart.js.</li>
+    <li>Limite de 5 requêtes en production pour 13 effectuées au chargement : une requête globale unique et filtrage côté client en JavaScript.</li></ul></div></div>
+  <div class="row"><div class="when mono">Stage 1<sup>re</sup> année</div><div><h3>Hardis Group — équipe Reflex</h3>
+    <p>Interface graphique en Python (Qt 5) pour moderniser un outil en ligne de commande d’export de données (CSV, Excel).</p>
+    <ul><li>Connexion à des bases MySQL, Oracle et DB2 ; paramètres SQL supplémentaires ; fenêtre d’exportation.</li>
+    <li>Application qui se figeait : mise en place du multi-threading avec un signal par interface.</li></ul></div></div>
+
+  <h2>Projets</h2>
+  <div class="row"><div class="when mono">Personnel</div><div><h3>Invest Intelligence</h3><p>Application full-stack d’analyse et de suivi des marchés : React, Vite, Tailwind CSS, Node.js, Express, SQLite, API financières, Reddit, scans automatisés et notifications ntfy.</p></div></div>
+  <div class="row"><div class="when mono">Personnel</div><div><h3>MoviDex</h3><p>Application React / Tailwind CSS consommant l’API TMDB : recherche, fiches de films, plateformes de diffusion. Code : github.com/Bastien150/MoviDex.</p></div></div>
+  <div class="row"><div class="when mono">Personnel</div><div><h3>Homelab</h3><p>Administration d’un environnement personnel (Raspberry Pi, NAS) : Home Assistant, Pi-hole, Plex, Sonarr, Radarr, Lidarr, qBittorrent.</p></div></div>
+  <div class="row"><div class="when mono">Entrepreneurial</div><div><h3>Teals Web</h3><p>Création de sites web : HTML, CSS, PHP, bases de données, conception d’interfaces.</p></div></div>
+  <div class="row"><div class="when mono">BTS</div><div><h3>Projet de fin d’année</h3><p>Application de calcul des frais kilométriques avec gestion des rôles et accès administrateur (PHP, SQL, CSS). Code : github.com/Bastien150/projetEpoka.</p></div></div>
+
+  <h2>Compétences</h2>
+  <div class="cols">
+    <p><b>Développement :</b> Java, JavaFX, JavaScript, PHP, React, HTML, CSS, Tailwind CSS, Bootstrap, Python (Qt), Chart.js</p>
+    <p><b>Bases de données :</b> SQL, conception de bases de données, SQLite, PostgreSQL</p>
+    <p><b>Systèmes :</b> Windows (installation, configuration, dépannage), Linux (services), NAS, Home Assistant, Pi-hole</p>
+    <p><b>Outils :</b> Git, GitHub, VS Code, PyCharm, Android Studio, Vite, Node.js, npm, DBeaver</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /portfolio/contact.php
+Disallow: /portfolio/cv.html
+
+Sitemap: https://glubul.ovh/portfolio/sitemap.xml
